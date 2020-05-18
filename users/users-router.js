@@ -2,6 +2,7 @@ const router = require("express").Router();
 
 const Users = require("./users-model.js");
 
+// Global Middleware function 
 function restricted(req, res, next) {
   if (req.session && req.session.loggedIn) {
     next();
