@@ -1,9 +1,6 @@
-import React from 'react';
-import '../App.css';
+import React, { useState, useEffect } from 'react';
 
-import Link from 'react-router-dom';
-
-const Login = () => {
+const Register = () => {
   // const [data, setData] = useState([]);
 
   // useEffect(() => {
@@ -18,16 +15,15 @@ const Login = () => {
   // }, [])
 
   return (
-    <div className="login-container">
-      <h2>Please login in</h2>
+    <div className="Register">
+      <h2>Register below</h2>
       <form>
         <input placeholder="username" type="text" />
-        <input type="text" placeholder="password" />
-        <button type="submit">login</button>
+        <input placeholder="password" type="text" />
+        <button type="submit">Register</button>
       </form>
-      
     </div>
-  );
+  )
 }
 
-export default Login;
+export default Register;
